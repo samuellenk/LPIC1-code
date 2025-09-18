@@ -1,0 +1,14 @@
+[Unit]
+Description=Mnt Disk3
+Before=local-fs.target
+After=blockdev@dev-disk-by\x2duuid-7767b4f5\x2d61bd\x2d4064\x2d9177\x2dcbe3e7c07485.target
+Wants=blockdev@dev-disk-by\x2duuid-7767b4f5\x2d61bd\x2d4064\x2d9177\x2dcbe3e7c07485.target
+
+[Mount]
+What=/dev/disk/by-uuid/7767b4f5-61bd-4064-9177-cbe3e7c07485
+Where=/mnt/disk3
+Type=ext4
+Options=defaults
+
+[Install]
+WantedBy=multi-user.target

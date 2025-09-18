@@ -1,0 +1,10 @@
+[Unit]
+Description=Automount for /mnt/disk3
+Wants=mnt-disk3.mount
+Before=mnt-disk3.mount
+
+[Automount]
+Where=/mnt/disk3
+
+[Install]
+WantedBy=multi-user.target
