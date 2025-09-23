@@ -1,0 +1,24 @@
+#!/bin/bash
+
+## Funktion zur Erstellung eines Ordners
+function mk_user_dir {
+  dt=$(date +%F)
+  mkdir -p "user_dir_$dt" 2> /dev/null
+  ## optional mit Prüfung
+  ## optional mit Variable
+}
+
+function hallo {
+  ## Funktion mk_user_dir aufrufen
+  mk_user_dir
+  if [ $# -eq 0 ]; then
+    echo "hallo $USER"
+  else
+    echo "hallo $1"
+  fi
+}
+
+hallo2() {
+  echo "hallo $USER"
+}
+
