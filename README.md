@@ -1,4 +1,4 @@
-# Kurs: Linux Sicherheit und Härtung
+# Kurs: LPI - LPIC-1 Komplettausbildung (101 und 102: Administrator)
 
 Dieses Repository enthält den Code zum Kurs [LPI - LPIC-1 Komplettausbildung (101 und 102: Administrator)](https://linux-trainings.de/lpi-lpic-1-komplettausbildung-101-und-102-administrator/)
 
@@ -7,7 +7,7 @@ Dieses Repository enthält den Code zum Kurs [LPI - LPIC-1 Komplettausbildung (1
 So kannst du dir eine Kopie von diesem Repository erstellen:
 
 ```bash
-git clone https://github.com/samuellenk/LPIC1-code
+git clone https://github.com/samuellenk/LPIC1-code.git
 ```
 
 ## Feedback und Kontakt
