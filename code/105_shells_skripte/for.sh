@@ -1,22 +1,16 @@
 #!/usr/bin/env bash
 
-NUMS=( "$(seq 3 5 28)" )
-
-#echo "Array: ${NUMS[@]}"
-
-echo "# simpler For-Loop"
-for i in "${NUMS[@]}"; do
-  echo "i=$i"
+echo "lange Variante mit IF"
+for NUM in 1 1 2 3 5 8 13; do
+  echo -n "$NUM ist "
+  if [ $(( $NUM % 2 )) -eq 1 ]; then
+    echo "ungerade."
+  else
+    echo "gerade."
+  fi
 done
 
-echo "# advanced For-Loop"
-for (( i = 0 ; i < "${#NUMS[@]}" ; i++ )); do
-  echo "$i=${NUMS[i]}"
+echo "kurze Variante mit && bzw. ||"
+for NUM in 1 1 2 3 5 8 13; do
+  echo -n "$NUM ist " && [ $(( $NUM % 2 )) -eq 1 ] && echo "ungerade." || echo "gerade."
 done
-
-echo "# advanced REVERSED For-Loop"
-#for (( i = ${#NUMS[@]} - 1; i >= 0; i-- )); do
-for (( i = "${#NUMS[@]}" - 1; i >= 0 ; i-- )); do
-  echo "$i=${NUMS[i]}"
-done
-
